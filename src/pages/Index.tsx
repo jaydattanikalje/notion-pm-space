@@ -1,18 +1,13 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-
 const Index = () => {
-  return (
-    <main className="page-container">
+  return <main className="page-container">
       <section className="flex flex-col items-start space-y-6 pb-12 pt-6 md:pt-10">
-        <h1 className="text-3xl font-medium tracking-tight sm:text-5xl">
-          Samuel Miller
-        </h1>
-        <p className="text-xl text-muted-foreground max-w-[700px]">
-          Product Manager specializing in user-centered design and strategic product development
-        </p>
+        <h1 className="text-3xl font-medium tracking-tight sm:text-5xl">Hi 👋🏼
+I am Jaydatta</h1>
+        <p className="text-xl text-muted-foreground max-w-[700px]">A Product Manager specialising in making purposeful products reach their highest potential.
+      </p>
         <div className="flex gap-4">
           <Button asChild>
             <Link to="/projects">
@@ -78,8 +73,6 @@ const Index = () => {
           </Link>
         </div>
       </section>
-    </main>
-  );
+    </main>;
 };
-
 export default Index;
