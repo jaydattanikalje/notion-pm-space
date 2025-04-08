@@ -1,32 +1,23 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-
 const Index = () => {
   return <main className="page-container">
-      <section className="flex flex-col md:flex-row md:items-center gap-8 pb-12 pt-6 md:pt-10">
-        <div className="flex flex-col items-start space-y-6">
-          <h1 className="text-3xl font-medium tracking-tight sm:text-5xl">Hi 👋🏼
+      <section className="flex flex-col items-start space-y-6 pb-12 pt-6 md:pt-10">
+        <h1 className="text-3xl font-medium tracking-tight sm:text-5xl">Hi 👋🏼
 I am Jaydatta</h1>
-          <p className="text-xl text-muted-foreground max-w-[700px]">A Product Manager specialising in making purposeful products reach their highest potential.
-        </p>
-          <div className="flex gap-4">
-            <Button asChild>
-              <Link to="/projects">
-                View Projects <ArrowRight className="ml-2 h-4 w-4" />
-              </Link>
-            </Button>
-            <Button variant="outline" asChild>
-              <Link to="/about">About Me</Link>
-            </Button>
-          </div>
+        <p className="text-xl text-muted-foreground max-w-[700px]">A Product Manager specialising in making purposeful products reach their highest potential.
+      </p>
+        <div className="flex gap-4">
+          <Button asChild>
+            <Link to="/projects">
+              View Projects <ArrowRight className="ml-2 h-4 w-4" />
+            </Link>
+          </Button>
+          <Button variant="outline" asChild>
+            <Link to="/about">About Me</Link>
+          </Button>
         </div>
-        <Avatar className="w-32 h-32 border-2 border-border">
-          <AvatarImage src="/placeholder.svg" alt="Profile" />
-          <AvatarFallback>JN</AvatarFallback>
-        </Avatar>
       </section>
 
       <section className="space-y-6 py-10 border-t border-border">
