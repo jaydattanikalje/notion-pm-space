@@ -12,6 +12,6 @@ export function ThemeToggle() {
   return <div className="flex items-center space-x-2">
       <span className="text-sm text-muted-foreground"></span>
       <Switch checked={isDark} onCheckedChange={toggleTheme} aria-label="Toggle theme" />
-      <span className="text-sm text-muted-foreground">🤍</span>
+      <span className="text-sm text-muted-foreground"></span>
     </div>;
 }

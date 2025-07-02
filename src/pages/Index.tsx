@@ -21,11 +21,11 @@ I am Jaydatta</h1>
       </section>
 
       <section className="space-y-6 py-10 border-t border-border">
-        <h2 className="text-2xl font-medium tracking-tight">Currently working on</h2>
+        <h2 className="text-2xl font-medium tracking-tight">💡 Currently on my mind!</h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div className="group rounded-md border border-border p-6 transition-all hover:border-foreground/20 hover:bg-accent/40">
             <h3 className="text-xl font-medium mb-2">NapLab</h3>
-            <p className="text-muted-foreground">Product manager on an AI integrated iOS app that helps users improve sleep dramatically with sound stimulation at the right time.</p>
+            <p className="text-muted-foreground">Building an efficient and reactive AI-based sound stimulation to improve the quality of sleep.</p>
           </div>
           <div className="group rounded-md border border-border p-6 transition-all hover:border-foreground/20 hover:bg-accent/40">
             <h3 className="text-xl font-medium mb-2">Talking Forests</h3>
