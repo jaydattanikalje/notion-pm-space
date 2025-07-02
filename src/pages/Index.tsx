@@ -1,22 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-
 const Index = () => {
   return <main className="page-container">
       <section className="flex flex-col items-start space-y-6 pb-12 pt-6 md:pt-10">
-        <div className="flex items-center gap-6">
-          <Avatar className="h-16 w-16 md:h-20 md:w-20">
-            <AvatarImage src="/lovable-uploads/c13f8dd4-0bbb-4215-b228-a84a6c176030.png" alt="Jaydatta" />
-            <AvatarFallback>JN</AvatarFallback>
-          </Avatar>
-          <div>
-            <h1 className="text-3xl font-medium tracking-tight sm:text-5xl">
-              Hi 👋🏼 I am <span className="bg-yellow-200 px-2 py-1 rounded">Jaydatta</span>
-            </h1>
-          </div>
-        </div>
+        <h1 className="text-3xl font-medium tracking-tight sm:text-5xl">Hi 👋🏼
+I am Jaydatta</h1>
         <p className="text-xl text-muted-foreground max-w-[700px]">A Product Manager specialising in making purposeful products reach their highest potential.
       </p>
         <div className="flex gap-4">
@@ -32,9 +21,7 @@ const Index = () => {
       </section>
 
       <section className="space-y-6 py-10 border-t border-border">
-        <h2 className="text-2xl font-medium tracking-tight">
-          <span className="bg-yellow-200 px-2 py-1 rounded">Currently working on</span>
-        </h2>
+        <h2 className="text-2xl font-medium tracking-tight">Currently working on</h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div className="group rounded-md border border-border p-6 transition-all hover:border-foreground/20 hover:bg-accent/40">
             <h3 className="text-xl font-medium mb-2">NapLab</h3>
@@ -53,9 +40,7 @@ const Index = () => {
       </section>
 
       <section className="space-y-6 py-10 border-t border-border">
-        <h2 className="text-2xl font-medium tracking-tight">
-          <span className="bg-yellow-200 px-2 py-1 rounded">Experience</span>
-        </h2>
+        <h2 className="text-2xl font-medium tracking-tight">Experience</h2>
         <div className="space-y-8">
           <div>
             <div className="flex justify-between items-start mb-2">

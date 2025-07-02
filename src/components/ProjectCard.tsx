@@ -12,17 +12,6 @@ interface ProjectCardProps {
   className?: string;
 }
 
-const tagColors = [
-  "bg-blue-100 text-blue-800",
-  "bg-green-100 text-green-800", 
-  "bg-purple-100 text-purple-800",
-  "bg-pink-100 text-pink-800",
-  "bg-orange-100 text-orange-800",
-  "bg-indigo-100 text-indigo-800",
-  "bg-red-100 text-red-800",
-  "bg-yellow-100 text-yellow-800"
-];
-
 const ProjectCard = ({
   title,
   description,
@@ -51,13 +40,10 @@ const ProjectCard = ({
         <p className="text-muted-foreground mb-4">{description}</p>
         
         <div className="flex flex-wrap gap-2">
-          {tags.map((tag, index) => (
+          {tags.map((tag) => (
             <span
               key={tag}
-              className={cn(
-                "inline-block text-xs px-2 py-1 rounded font-medium",
-                tagColors[index % tagColors.length]
-              )}
+              className="inline-block text-xs px-2 py-1 bg-secondary text-secondary-foreground rounded"
             >
               {tag}
             </span>
