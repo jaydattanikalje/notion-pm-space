@@ -6,6 +6,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import VideoPopup from "./components/VideoPopup";
 import Index from "./pages/Index";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
@@ -23,6 +24,7 @@ const App = () => (
       <BrowserRouter>
         <div className="flex min-h-screen flex-col">
           <Navbar />
+          <VideoPopup />
           <div className="flex-1">
             <Routes>
               <Route path="/" element={<Index />} />

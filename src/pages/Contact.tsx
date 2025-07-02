@@ -1,12 +1,12 @@
 
 import ContactForm from "@/components/ContactForm";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Linkedin } from "lucide-react";
 
 const Contact = () => {
   return (
     <main className="page-container">
       <h1 className="text-3xl font-medium tracking-tight sm:text-5xl mb-8">
-        Contact
+        <span className="bg-yellow-200 px-2 py-1 rounded">Contact</span>
       </h1>
       
       <p className="text-lg text-muted-foreground mb-10">
@@ -26,36 +26,27 @@ const Contact = () => {
               <Mail className="w-5 h-5 mt-1 mr-3 text-muted-foreground" />
               <div>
                 <h3 className="text-lg font-medium">Email</h3>
-                <a href="mailto:samuel@example.com" className="notion-link text-muted-foreground">
-                  samuel@example.com
+                <a href="mailto:jaydatta@example.com" className="notion-link text-muted-foreground">
+                  jaydatta@example.com
                 </a>
               </div>
             </div>
             
             <div className="flex items-start">
-              <Phone className="w-5 h-5 mt-1 mr-3 text-muted-foreground" />
+              <Linkedin className="w-5 h-5 mt-1 mr-3 text-muted-foreground" />
               <div>
-                <h3 className="text-lg font-medium">Phone</h3>
-                <a href="tel:+11234567890" className="notion-link text-muted-foreground">
-                  +1 (123) 456-7890
+                <h3 className="text-lg font-medium">LinkedIn</h3>
+                <a href="https://linkedin.com/in/jaydattanikalje" target="_blank" rel="noopener noreferrer" className="notion-link text-muted-foreground">
+                  linkedin.com/in/jaydattanikalje
                 </a>
               </div>
             </div>
           </div>
           
           <div className="mt-10">
-            <h3 className="text-lg font-medium mb-4">Office Hours</h3>
-            <p className="text-muted-foreground">
-              Monday to Friday<br />
-              9:00 AM - 5:00 PM EST
-            </p>
-          </div>
-          
-          <div className="mt-10">
             <h3 className="text-lg font-medium mb-4">Location</h3>
             <p className="text-muted-foreground">
-              San Francisco, California<br />
-              United States
+              Stockholm, Sweden
             </p>
           </div>
         </div>
