@@ -25,11 +25,11 @@ I am Jaydatta</h1>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div className="group rounded-md border border-border p-6 transition-all hover:border-foreground/20 hover:bg-accent/40">
             <h3 className="text-xl font-medium mb-2">NapLab</h3>
-            <p className="text-muted-foreground">Building an efficient and reactive AI-based sound stimulation to improve the quality of sleep.</p>
+            <p className="text-muted-foreground">Building an efficient and reactive AI-based sound stimulation to improve quality of sleep.</p>
           </div>
           <div className="group rounded-md border border-border p-6 transition-all hover:border-foreground/20 hover:bg-accent/40">
-            <h3 className="text-xl font-medium mb-2">Talking Forests</h3>
-            <p className="text-muted-foreground">A hobby project that make forests into verbal storytelling and conversation medium for young adults, elders and nature enthusiasts.</p>
+            <h3 className="text-xl font-medium mb-2">Whistle Blower</h3>
+            <p className="text-muted-foreground">A social experiment and an app against eve teasing and safety of all age- women.</p>
           </div>
         </div>
         <div className="flex justify-end">
@@ -40,7 +40,7 @@ I am Jaydatta</h1>
       </section>
 
       <section className="space-y-6 py-10 border-t border-border">
-        <h2 className="text-2xl font-medium tracking-tight">Experience</h2>
+        <h2 className="text-2xl font-medium tracking-tight">🚀 Experience</h2>
         <div className="space-y-8">
           <div>
             <div className="flex justify-between items-start mb-2">
