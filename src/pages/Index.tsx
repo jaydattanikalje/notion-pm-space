@@ -6,8 +6,7 @@ const Index = () => {
       <section className="flex flex-col items-start space-y-6 pb-12 pt-6 md:pt-10">
         <h1 className="text-3xl font-medium tracking-tight sm:text-5xl">Hi 👋🏼
 I am Jaydatta</h1>
-        <p className="text-xl text-muted-foreground max-w-[700px]">A Product Manager specialising in making purposeful products reach their highest potential.
-      </p>
+        <p className="text-xl text-muted-foreground max-w-[700px]">A Product Manager specialising in making purposeful products reach their highest potential in the shortest time.</p>
         <div className="flex gap-4">
           <Button asChild>
             <Link to="/projects">
@@ -24,11 +23,11 @@ I am Jaydatta</h1>
         <h2 className="text-2xl font-medium tracking-tight">💡 Currently on my mind!</h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div className="group rounded-md border border-border p-6 transition-all hover:border-foreground/20 hover:bg-accent/40">
-            <h3 className="text-xl font-medium mb-2">NapLab</h3>
+            <h3 className="text-xl font-medium mb-2">NapLab 🇸🇪</h3>
             <p className="text-muted-foreground">Building an efficient and reactive AI-based sound stimulation to improve quality of sleep.</p>
           </div>
           <div className="group rounded-md border border-border p-6 transition-all hover:border-foreground/20 hover:bg-accent/40">
-            <h3 className="text-xl font-medium mb-2">Whistle Blower</h3>
+            <h3 className="text-xl font-medium mb-2">Whistle Blower 🇮🇳</h3>
             <p className="text-muted-foreground">A social experiment and an app against eve teasing and safety of all age- women.</p>
           </div>
         </div>
@@ -44,13 +43,11 @@ I am Jaydatta</h1>
         <div className="space-y-8">
           <div>
             <div className="flex justify-between items-start mb-2">
-              <h3 className="text-lg font-medium">Product Manager (UX and Marketing)</h3>
+              <h3 className="text-lg font-medium">Agile Product Manager - AI based iOS app</h3>
               <span className="text-sm text-muted-foreground">March 2025-Present</span>
             </div>
-            <h4 className="text-base text-muted-foreground mb-2">NapLab - SineAB - Stockholm</h4>
-            <p className="text-muted-foreground">
-              Led cross-functional teams to deliver user-centered products that increased customer satisfaction by 28%.
-            </p>
+            <h4 className="text-base text-muted-foreground mb-2">NapLab - Stockholm</h4>
+            <p className="text-muted-foreground">Scrum master, GTM strategy, Growth, stakeholders management and UI/UX.</p>
           </div>
           <div>
             <div className="flex justify-between items-start mb-2">
