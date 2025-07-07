@@ -3,17 +3,12 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-
 const Index = () => {
   return <main className="page-container">
       <section className="flex flex-col md:flex-row items-start gap-8 pb-12 pt-6 md:pt-10 mx-0 px-[34px] py-[60px]">
         <div className="flex-shrink-0">
           <div className="w-48 h-48 md:w-64 md:h-64 overflow-hidden rounded-lg border-2 border-border shadow-sm">
-            <img 
-              src="/lovable-uploads/29cbd7b8-7396-49cd-bef8-e198b7335ea8.png" 
-              alt="Jaydatta" 
-              className="w-full h-full object-cover"
-            />
+            <img src="/lovable-uploads/29cbd7b8-7396-49cd-bef8-e198b7335ea8.png" alt="Jaydatta" className="w-full h-full object-cover" />
           </div>
         </div>
         <div className="flex flex-col space-y-6 flex-1">
@@ -90,5 +85,4 @@ I am Jaydatta</h1>
       </section>
     </main>;
 };
-
 export default Index;
