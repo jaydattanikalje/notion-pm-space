@@ -1,6 +1,9 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
+import { AspectRatio } from "@/components/ui/aspect-ratio";
+
 const Index = () => {
   return <main className="page-container">
       <section className="flex flex-col items-start space-y-6 pb-12 pt-6 md:pt-10">
@@ -23,10 +26,24 @@ I am Jaydatta</h1>
         <h2 className="text-2xl font-medium tracking-tight">💡 Currently on my mind!</h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           <div className="group rounded-md border border-border p-6 transition-all hover:border-foreground/20 hover:bg-accent/40">
-            <h3 className="text-xl font-medium mb-2">NapLab 🇸🇪</h3>
+            <AspectRatio ratio={16 / 9} className="mb-4 overflow-hidden rounded-md bg-secondary">
+              <img 
+                src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=225&fit=crop" 
+                alt="NapLab - Woman using laptop for sleep research"
+                className="h-full w-full object-cover transition-transform group-hover:scale-105"
+              />
+            </AspectRatio>
+            <h3 className="text-xl font-medium mb-2">NapLab 🇸🇪</h3>
             <p className="text-muted-foreground">Building an efficient and reactive AI-based sound stimulation to improve quality of sleep.</p>
           </div>
           <div className="group rounded-md border border-border p-6 transition-all hover:border-foreground/20 hover:bg-accent/40">
+            <AspectRatio ratio={16 / 9} className="mb-4 overflow-hidden rounded-md bg-secondary">
+              <img 
+                src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=225&fit=crop" 
+                alt="Whistle Blower - Technology circuit board"
+                className="h-full w-full object-cover transition-transform group-hover:scale-105"
+              />
+            </AspectRatio>
             <h3 className="text-xl font-medium mb-2">Whistle Blower 🇮🇳</h3>
             <p className="text-muted-foreground">A social experiment and an app against eve teasing and safety of all age- women.</p>
           </div>
