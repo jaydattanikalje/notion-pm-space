@@ -1,21 +1,34 @@
-
 import { Link } from "react-router-dom";
 
 const About = () => {
   return (
     <main className="page-container">
-      <h1 className="text-3xl font-medium tracking-tight sm:text-5xl mb-8">
-        About Me
-      </h1>
-      
-      <section className="mb-12">
-        <p className="text-lg mb-4">
-          I'm Samuel Miller, a product manager with over 6 years of experience in the tech industry. My passion lies in creating intuitive products that solve complex problems. I specialize in user-centered design and strategic product development.
-        </p>
-        <p className="text-lg mb-4">
-          My approach combines analytical thinking with creative problem-solving to deliver products that not only meet business objectives but also provide exceptional user experiences. I thrive in collaborative environments and enjoy working with cross-functional teams.
-        </p>
-      </section>
+      <div className="flex flex-col md:flex-row gap-8 mb-12">
+        <div className="flex-1">
+          <h1 className="text-3xl font-medium tracking-tight sm:text-5xl mb-8">
+            About Me
+          </h1>
+          
+          <section className="mb-12">
+            <p className="text-lg mb-4">
+              I'm Samuel Miller, a product manager with over 6 years of experience in the tech industry. My passion lies in creating intuitive products that solve complex problems. I specialize in user-centered design and strategic product development.
+            </p>
+            <p className="text-lg mb-4">
+              My approach combines analytical thinking with creative problem-solving to deliver products that not only meet business objectives but also provide exceptional user experiences. I thrive in collaborative environments and enjoy working with cross-functional teams.
+            </p>
+          </section>
+        </div>
+        
+        <div className="md:w-80 flex justify-center md:justify-end">
+          <div className="w-64 h-80 overflow-hidden rounded-lg border border-border shadow-sm">
+            <img 
+              src="/lovable-uploads/29cbd7b8-7396-49cd-bef8-e198b7335ea8.png" 
+              alt="Jaydatta"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+      </div>
       
       <section className="mb-12">
         <h2 className="text-2xl font-medium mb-6">Skills</h2>
