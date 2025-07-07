@@ -2,6 +2,7 @@
 import { Link } from "react-router-dom";
 import { cn } from "@/lib/utils";
 import { AspectRatio } from "./ui/aspect-ratio";
+import { getTagColor } from "@/utils/tagColors";
 
 interface ProjectCardProps {
   title: string;
@@ -43,7 +44,10 @@ const ProjectCard = ({
           {tags.map((tag) => (
             <span
               key={tag}
-              className="inline-block text-xs px-2 py-1 bg-secondary text-secondary-foreground rounded"
+              className={cn(
+                "inline-block text-xs px-2 py-1 rounded font-medium",
+                getTagColor(tag)
+              )}
             >
               {tag}
             </span>
