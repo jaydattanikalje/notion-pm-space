@@ -1,3 +1,4 @@
+
 import { Link } from "react-router-dom";
 
 const About = () => {
@@ -20,7 +21,7 @@ const About = () => {
         </div>
         
         <div className="md:w-80 flex justify-center md:justify-end">
-          <div className="w-64 h-80 overflow-hidden rounded-lg border border-border shadow-sm">
+          <div className="w-64 h-64 overflow-hidden rounded-full border border-border shadow-sm">
             <img 
               src="/lovable-uploads/29cbd7b8-7396-49cd-bef8-e198b7335ea8.png" 
               alt="Jaydatta"
