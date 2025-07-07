@@ -1,28 +1,9 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import { getTagColor } from "@/utils/tagColors";
-import { cn } from "@/lib/utils";
-
 const Index = () => {
-  const featuredProjects = [
-    {
-      title: "NapLab 🇸🇪",
-      description: "Building an efficient and reactive AI-based sound stimulation to improve quality of sleep.",
-      image: "https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=225&fit=crop",
-      tags: ["AI", "Sleep Research", "Product Strategy"]
-    },
-    {
-      title: "Whistle Blower 🇮🇳",
-      description: "A social experiment and an app against eve teasing and safety of all age- women.",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=225&fit=crop",
-      tags: ["Social Impact", "Safety", "Mobile First"]
-    }
-  ];
-
   return <main className="page-container">
       <section className="flex flex-col md:flex-row items-start gap-8 pb-12 pt-6 md:pt-10 mx-0 px-[34px] py-[60px]">
         <div className="flex-shrink-0">
@@ -52,29 +33,20 @@ I am Jaydatta</h1>
       <section className="space-y-6 py-10 border-t border-border">
         <h2 className="text-2xl font-medium tracking-tight">💡 Currently on my mind!</h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
-          {featuredProjects.map((project) => (
-            <div key={project.title} className="group rounded-md border border-border p-6 transition-all hover:border-foreground/20 hover:bg-accent/40">
-              <AspectRatio ratio={16 / 9} className="mb-4 overflow-hidden rounded-md bg-secondary">
-                <img src={project.image} alt={project.title} className="h-full w-full object-cover transition-transform group-hover:scale-105" />
-              </AspectRatio>
-              <h3 className="text-xl font-medium mb-2">{project.title}</h3>
-              <p className="text-muted-foreground mb-4">{project.description}</p>
-              
-              <div className="flex flex-wrap gap-2">
-                {project.tags.map((tag) => (
-                  <span
-                    key={tag}
-                    className={cn(
-                      "inline-block text-xs px-2 py-1 rounded border",
-                      getTagColor(tag)
-                    )}
-                  >
-                    {tag}
-                  </span>
-                ))}
-              </div>
-            </div>
-          ))}
+          <div className="group rounded-md border border-border p-6 transition-all hover:border-foreground/20 hover:bg-accent/40">
+            <AspectRatio ratio={16 / 9} className="mb-4 overflow-hidden rounded-md bg-secondary">
+              <img src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7?w=400&h=225&fit=crop" alt="NapLab - Woman using laptop for sleep research" className="h-full w-full object-cover transition-transform group-hover:scale-105" />
+            </AspectRatio>
+            <h3 className="text-xl font-medium mb-2">NapLab 🇸🇪</h3>
+            <p className="text-muted-foreground">Building an efficient and reactive AI-based sound stimulation to improve quality of sleep.</p>
+          </div>
+          <div className="group rounded-md border border-border p-6 transition-all hover:border-foreground/20 hover:bg-accent/40">
+            <AspectRatio ratio={16 / 9} className="mb-4 overflow-hidden rounded-md bg-secondary">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=225&fit=crop" alt="Whistle Blower - Technology circuit board" className="h-full w-full object-cover transition-transform group-hover:scale-105" />
+            </AspectRatio>
+            <h3 className="text-xl font-medium mb-2">Whistle Blower 🇮🇳</h3>
+            <p className="text-muted-foreground">A social experiment and an app against eve teasing and safety of all age- women.</p>
+          </div>
         </div>
         <div className="flex justify-end">
           <Link to="/projects" className="notion-link text-sm">
